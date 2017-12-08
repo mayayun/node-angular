@@ -1,0 +1,68 @@
+body{
+	background: url("../images/bg.jpg") no-repeat; 
+	background-size: cover;
+	height: 100%
+}
+html{
+	height: 100%
+}
+body>p{
+	text-align: right;
+	padding: 10px
+}
+body>div{
+	background: url("../images/bg_01.png") no-repeat; 
+	background-size: cover;
+	width: 425px;
+	height: 425px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -213px;
+	margin-left: -213px
+}
+body>div>div{
+	width: 260px;
+	height: 26px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -130px;
+	margin-left: -130px;
+	padding-top: 30px;
+}
+.input_group{
+	border-bottom: 1px solid #03443e;
+	font-size: 16px;
+	color: #999999;
+	padding-top: 30px
+}
+.input_group input{
+	font-size: 14px;
+    padding: 5px 10px;
+}
+.input_group label{
+	width: 48px;
+	display: inline-block;
+}
+body>div>div p{
+	overflow: hidden;
+	padding: 5px 0 10px;
+}
+body>div>div p a{
+	font-size: 10px;
+	color: #2061cd
+}
+/*body>div>div p a:first-child{
+	float: left;
+}*/
+body>div>div p a{
+	float: right;
+}
+body>div>div button{
+	width: 100%;
+	background: #7d0000;
+	color: #fff;
+	font-size: 16px;
+	padding: 7px 0;
+}

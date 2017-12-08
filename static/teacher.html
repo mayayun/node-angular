@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台首页</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body ng-app="App">
+	<!-- 左侧导航栏 -->
+	<aside class="leftNavigation">
+		<dl>
+			<dd><a href="./teacherMsg.html"><img src="images/kris_wu.png" alt="头像"></a></dd>
+			<dt>吴老师</dt>
+		</dl>
+		<ul>
+			<li class="{{question?'active':''}}"><a href="#/questionList" class="questionList"><b></b>问题列表</a><i></i></li>
+			<li class="{{replay?'active':''}}"><a href="#/myreplay" class="reply"><b></b>我的回复</a><i></i></li>
+			<li class="{{msg?'active':''}}"><a href="#/msg" class="msg"><b></b>我的消息</a><i></i></li>
+			<li class="{{course?'active':''}}"><a href="#/myCourse" class="course"><b></b>我的课程</a><i></i></li>
+			<li class="{{book?'active':''}}"><a href="#/myBook" class="book"><b></b>我的书籍</a><i></i></li>
+		</ul>
+	</aside>
+	<!-- 右侧具体内容 -->
+	<section class="main">
+		<div ng-view></div>
+		
+	</section>
+ 	<!-- <script src="http://cdn.bootcss.com/angular.js/1.2.7/angular.js"></script>
+    <script src="http://cdn.bootcss.com/angular.js/1.2.7/angular-route.min.js"></script> -->
+	 
+    <!-- <script src="http://cdn.bootcss.com/angular-filter/0.5.16/angular-filter.js"></script>
+    <script src="http://cdn.bootcss.com/angular-resource/1.4.5/angular-resource.js"></script>
+    <script src="http://cdn.bootcss.com/angular-breadcrumb/0.5.0/angular-breadcrumb.js"></script>
+    <script src="http://cdn.bootcss.com/angular-websocket/2.0.1/angular-websocket.js"></script>
+    <script src="http://cdn.bootcss.com/angular-file-upload/2.5.0/angular-file-upload.min.js"></script>
+    <script src="http://cdn.bootcss.com/angular-toastr/2.1.1/angular-toastr.js"></script>
+    <script src="http://cdn.bootcss.com/ng-table/1.0.0/ng-table.js"></script>
+    <script src="js/ng-infinite-scroll.js"></script> -->
+    <script src="./js/angular.js"></script>
+    <script src="./js/ng-router.js"></script>
+    <script src="./js/ng-file-upload.min.js"></script>
+    <script src="./js/ng-file-upload-shim.min.js"></script>
+    <script src="./app/app.js"></script>
+	<script src="./app/teacher.js"></script>
+</body>
+</html>

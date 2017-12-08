@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/login.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body ng-app="App" ng-controller ="myContrl">
+	<p><img onclick="location.href='./portrait.html'" src="./images/person.png" alt=""></p>
+	<div>
+		<div>
+			<div class="input_group">
+				<label for="">用户名</label><input ng-model="user.username" type="text">
+			</div>
+			<div class="input_group">
+				<label for="">密码</label><input type="password" ng-model="user.password">
+			</div>
+			<p><a href="./forgetpwd.html">忘记密码</a><!-- <a href="#">修改密码</a> --></p>
+			<button ng-click="login()">登录</button>
+		</div>
+	</div>
+	<script src="./js/angular.js"></script>
+	<script src="./app/login.js"></script>
+</body>
+</html>

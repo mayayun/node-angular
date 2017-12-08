@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>头像</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="js/3.3.7/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/teacher.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="./js/bootstrap.js"></script>
+</head>
+<body ng-app="App">
+	<nav class="navbar navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <img alt="Brand" src="./images/logo.png">
+	      </a>
+	    </div>
+	    <span class="active"><a href="#/teacher">老师管理</a></span>
+	    <span><a href="#/questionnaire">问卷管理</a></span>
+	    <ul class="nav navbar-nav navbar-right">
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="./login.html">退出</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	  </div>
+	</nav>
+	<div class="main">
+		<div ng-view></div>
+	</div>
+	<script src="./js/angular.js"></script>
+    <script src="./js/ng-router.js"></script>
+    <script src="./js/ng-file-upload.min.js"></script>
+    <script src="./js/ng-file-upload-shim.min.js"></script>
+    <script src="./app/app.js"></script>
+	<script src="./app/manager.js"></script>
+</body>
+</html>

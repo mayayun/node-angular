@@ -1,0 +1,269 @@
+body,html{
+	height: 100%;
+}
+body{
+	background: #e8e8e8;
+	
+}
+.main{
+
+}
+a:hover{
+	text-decoration: none
+}
+nav{
+	background: #004d8d
+}
+nav .navbar-brand{
+	height: auto
+}
+.container-fluid{
+	text-align: center;
+}
+.container-fluid>span{
+	display: inline-block;
+	line-height: 67px;
+	padding: 0 15px;
+	margin: 0 20px
+}
+.container-fluid>span.active{
+	background: #000;
+}
+.container-fluid>span a{
+	color: #999999
+}
+.container-fluid>span.active a{
+	color: #fff
+}
+.dropdown .caret{
+	background: url("../images/icon_list.png") 0 -290px;
+	border:0;
+	width: 35px;
+	height: 30px;
+	display: inline-block;
+}
+.main{
+	padding: 120px 10% 20px;
+	background: #e8e8e8
+}
+.navbar{
+	margin-bottom: 0
+}
+.teacher,.portrait{
+	min-height: 200px;
+	background: #fff;
+	position: relative;
+	padding: 30px 0;
+}
+.teacher{
+	padding: 0 200px 50px;
+}
+.teacher>p:first-child{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top:-70px;
+	left: 50%;
+	margin-left: -70px;
+}
+.teacher>p img{
+	width: 100%
+}
+.teacher:before{
+	content: "";
+	display: table;
+}
+.teacher ul{
+	margin-top: 80px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px
+}
+.teacher .name,.teacher .name input{
+	font-size: 25px;
+	font-weight: 400;
+}
+.teacher>span{
+	display: inline-block;
+	padding: 7px 20px;
+	background: #6ec8ae;
+	color: #fff;
+	border-radius: 3px;
+}
+.teacher>p:last-child{
+	font-size: 14px;
+	line-height: 40px;
+}
+body>p{
+	text-align: center;
+}
+body>p button{
+	background: #004d8d;
+	padding:10px 25px;
+	color: #fff;
+	border-radius: 3px;
+	margin-top: 20px
+}
+.teacher input{
+	background: #e8e8e8;
+	padding: 5px 10px
+}
+.teacher li{
+	margin-bottom: 5px 
+}
+.teacher ul input{
+	width: 160px;
+	font-size: 16px;
+}
+.teacher>p:last-child input{
+	width: 100%
+}
+.other p:last-child input{
+	width: auto
+}
+.other p{
+	line-height: 40px
+}
+.portrait li div{
+	width: 145px;
+	height: 145px;
+	overflow: hidden;
+	border-radius: 50%;
+	background: url("../images/icon_list.png") no-repeat -106px -331px #e8e8e8;
+	margin:0 auto;
+}
+.portrait li img{
+	width: 100%;
+	height: 100%
+}
+.portrait li{
+	width: 24%;
+	display: inline-block;
+	margin-bottom: 20px
+
+}
+.outer{
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+}
+.questionnaire li{
+	float: left;
+	width: 20%;
+    background: #0068b7;
+    margin: 0 2% 20px;
+    text-align: center;
+}
+.questionnaire>ul{
+	overflow: hidden;
+}
+.questionnaire li a{
+	color: #fff;
+	float: left;
+	padding: 20px 30px;
+	width: 100%;
+	font-size: 25px
+}
+
+.questionnaire li span{
+	width: 45px;
+    height: 48px;
+    display: inline-block;
+    background: url(../images/icon_list.png) no-repeat -156px -382px;
+}
+.input_group{
+	font-size: 16px;
+	min-height: 40px;
+	position: relative;
+}
+.input_group input{
+	background: #e8e8e8;
+	padding-left: 20px
+}
+.discrip input{
+	width: 100%;
+	padding-left: 120px;
+}
+.discrip label{
+	/*position: absolute;*/
+}
+.input_group p{
+	    background: #e8e8e8;
+    padding-left: 20px;
+}
+.input_group>label{
+	float: left;
+}
+.input_group>div{
+	padding-left: 100px;
+}
+.input_group label{
+	
+    width: 100px;
+    text-align: left;
+    font-weight: normal;
+    background: #fff;
+    line-height: 25px;
+}
+.answer input{
+	width: 16%;
+	margin: 0 2% 0 0;
+}
+.answer span{
+	display: inline-block;
+	width: 17%;
+	background: #e8e8e8;
+	height: 25px;
+	vertical-align: middle;
+	background: url("../images/icon_list.png") no-repeat 69px -240px #e8e8e8;
+}
+.addQues>div>p a{
+	display: inline-block;
+	color: #004d8d
+}
+.addQues>div>p a i{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url("../images/icon_list.png") no-repeat -4px -416px;
+}
+.addQues>p{
+	text-align: center;
+}
+.addQues>p button{
+	padding: 10px 20px;
+	background: #004d8d;
+	color: #fff;
+	border-radius: 3px;
+	-moz-border-radius: 3px; /* Firefox */
+  -webkit-border-radius: 3px; /* Safari 和 Chrome */
+  margin: 20px 0
+
+}
+.answer p{
+	margin-right: 1%;
+    width: 26%;
+    display: inline-block;
+}
+
+.other{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 60px
+}
+
+button a{
+	color: #fff
+}
+.msg{
+	font-size: 10px;
+	color: #f00;
+	display: inline-block;
+	margin-left: 10px
+}
+.introduce input{
+	width: 100%;
+}

@@ -1,0 +1,110 @@
+body{
+	background: #ebebeb
+}
+header{
+	background: #fff;
+}
+.outer{
+	width: 840px;
+	margin: 0 auto;
+	background: #fff;
+}
+header .outer{
+	padding: 10px 20px;
+}
+header .outer img{
+	height: 40px;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+.main{
+	padding: 40px 30px;
+	margin: 10px auto
+}
+.input_group{
+	border:1px solid #999999;
+	color: #999999;
+	padding: 5px;
+	margin: 10px 0;
+}
+.input_group>label{
+	vertical-align: middle;
+	margin-right: 5px
+}
+.input_group:nth-child(2){
+	border: 0
+}
+.input_group:nth-child(1)>label{
+	display: inline-block;
+	width: 31px;
+	height: 29px;
+	background: url("../images/icon_list.png") no-repeat -60px -249px;
+}
+.input_group:nth-child(2)>label{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url("../images/icon_list.png") no-repeat -130px 0px;
+}
+.input_group:nth-child(3)>label{
+	display: inline-block;
+	width: 31px;
+	height: 29px;
+}
+.input_group:nth-child(2)>a{
+	background: #999999;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.main p{
+	font-size: 10px;
+	margin-bottom: 15px;
+}
+.main p span{
+	color: #f00
+}
+.main>div{
+	width: 320px;
+	margin: 0 auto
+}
+.main>div button{
+	width: 100%;
+	background: #53ccc1;
+	color: #fff;
+	padding: 7px 0;
+	font-size: 16px
+}
+.danger{
+	border:1px solid #ff0000;
+}
+.text-danger{
+	color: #ff0000
+}
+.main .forgetpwd01 label{
+	background: url("../images/icon_list.png") no-repeat;
+	background-position: -139px -201px;
+	vertical-align: middle;
+	margin-right: 5px
+}
+.main .forgetpwd01 p label{
+	background-position: -66px -313px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+.forgetpwd02 .input_group{
+	border: 0
+}
+.main .forgetpwd02{
+	width: 40%;
+}
+.main .forgetpwd02 label{
+	background-position: -134px -81px;
+    width: 41px;
+    height: 41px;
+    
+}
+.main .forgetpwd02 a{
+	color: #2061cd
+}

@@ -1,0 +1,612 @@
+body,html{
+	height: 100%;
+}
+aside{
+	height: 100%
+}
+.leftNavigation{
+	float: left;
+	width: 250px;
+	background: #004d8d;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	position: fixed;
+}
+.leftNavigation>dl{
+	margin: 50px 0;
+}
+.leftNavigation dt{
+	font-size: 14px
+}
+.leftNavigation a{
+	color: #99a9b5
+}
+.leftNavigation li{
+	height: 75px;
+	line-height: 75px;
+	border-bottom: 1px solid #4c7ba1;
+}
+.leftNavigation li b,.leftNavigation li i{
+	display: inline-block;
+	background: url("../images/icon_list.png");
+	vertical-align: middle;
+}
+.leftNavigation li b{
+	width: 23px;
+	height: 25px;
+	margin-right: 25px;
+}
+.leftNavigation li i{
+	width: 11px;
+	height: 20px;
+	margin-left: 30px;
+	background-position: -65px -204px
+}
+.leftNavigation .active a{
+	color: #fff
+}
+.leftNavigation .active i{
+	background-position: 0px -204px
+}
+.leftNavigation .active .questionList b{
+	background-position: 0px 0px
+}
+.leftNavigation .active .reply b{
+	background-position: 0px -64px
+}
+.leftNavigation .active .course b{
+	background-position: 0px -122px
+}
+.leftNavigation .active .book b{
+	background-position: 0px -172px
+}
+.leftNavigation .active .msg b{
+	background-position: -1px -453px
+}
+.leftNavigation .questionList b{
+	background-position: -64px 0px
+}
+.leftNavigation .reply b{
+	background-position: -64px -64px
+}
+.leftNavigation .course b{
+	background-position: -64px -122px
+}
+.leftNavigation .book b{
+	background-position: -64px -172px
+}
+.leftNavigation .msg b{
+	background-position: -62px -453px
+}
+.main{
+	font-size: 16px;
+	padding-left: 250px;
+	/*height: 100%;*/
+}
+/****************主页面***********************/
+
+.main .index h3{
+	font-size: 20px;
+	color: #004d8d;
+	border-bottom: 1px solid #d3dadf;
+	line-height: 70px;
+	padding:20px 0 0 60px;
+}
+.main .index ul{
+	margin-left: 64px;
+}
+.main .index ul li{
+	overflow: hidden;
+	border-bottom: 1px solid #ccd4da;
+	padding:20px 0;
+	position: relative;
+}
+.main .index ul li .time{
+	font-size: 12px;
+	position: absolute;
+	bottom: 0
+}
+.main .index dl,.main .index div,.main .index button{
+	display: inline-block;
+	vertical-align: middle;
+}
+.main .index dd{
+	width: 50px;
+	height: 50px;
+	background: #004d8d;
+	border-radius: 50%;
+}
+.main .index dt{
+	color: #004d8d;
+	font-size: 10px;
+	text-align: center;
+}
+.main .index button{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	background: #004d8d;
+	
+	border-radius: 5px
+}
+.main .index button a{
+	display: block;
+	color: #fff;
+}
+.main .index div{
+	width: 75%;
+	margin: 0 30px;
+}
+.main .index div p:first-child{
+	line-height: 40px;
+}
+.main .index div p span{
+	color: #a62200
+}
+.main .index button.active{
+	background: #fff;
+	color: #004d8d;
+	border:1px solid #004d8d;
+}
+.main .index button.active a{
+	color: #004d8d;
+}
+/******************个人信息********************/
+.personalMassage>h3{
+	color: #004d8d;
+	font-size: 22px;
+	line-height: 60px;
+	padding-left: 20px;
+	margin-bottom: 8px;
+	-moz-box-shadow: 0px 3px 20px #a5a5a6; 
+	box-shadow: 0px 3px 20px #a5a5a6;
+	font-weight: normal;
+}
+.personalMain{
+	background: #e8e8e8;
+	padding-left: 40px
+}
+.basicMassage{
+	overflow: hidden;
+}
+.basicMassage ul{
+	float: left;
+	padding:10px 30px ;
+	color: #fff;
+	font-size: 16px;
+	line-height: 30px;
+	border-radius: 3px;
+	margin: 10px 40px 0 0;
+}
+.basicMassage .child{
+	background: #1ec35f
+}
+.basicMassage .parent{
+	background: #8693f3
+}
+.gauge{
+	margin-top: 10px;
+	font-size: 16px;
+	overflow: hidden;
+}
+.gauge p,.history>p{
+	line-height: 30px;
+	font-size: 16px;
+}
+.gauge ul{
+	/*float: left;*/
+	width: 20%;
+	margin: 10px 2% 20px 0;
+	background: #fff;
+	line-height: 40px;
+	padding-left: 30px;
+	border-radius: 3px
+}
+.gauge>div{
+	background: #fff;
+	padding: 10px 20px;
+}
+.gauge dl{
+	margin-bottom: 10px;
+}
+.gauge dt{
+	margin-bottom: 10px;
+	color: #999999;
+    font-size: 10px;
+}
+.gauge>div>p{
+	color: #262626;
+    font-size: 18px;
+}
+.gauge>div li{
+	color: #262626;
+    line-height: 30px
+}
+.gauge>div li span{
+	display: inline-block;
+    margin-left: 20px;
+    color: #f79e28;
+}
+.singleDay{
+	overflow: hidden;
+	margin-bottom: 20px
+}
+
+.singleDay>h4{
+	font-size: 16px;
+	border-bottom: 1px solid #999;
+	line-height: 30px;
+}
+.singleDay>div{
+	padding: 10px 20px;
+	float: left;
+	background: #fff;
+	width: 25%;
+    margin: 15px 2%;
+   /* padding-left: 10px;*/
+    height: 260px;
+}
+.singleDay>div:last-child{
+	width: 59%;
+}
+.singleDay>div>div{
+	float: left;
+}
+.singleDay>div>div p{
+	line-height: 110px;
+}
+.singleDay>div>div .now{
+	line-height: 140px;
+	margin-bottom: 10px;
+}
+.singleDay .pie{
+	float: right;
+}
+.pie p{
+	/*display: inline-block;
+	vertical-align: middle;*/
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	background: #1ec35f;
+	text-align: center;
+	line-height: 110px;
+	color: #fff;
+	margin: 0 auto;
+}
+.pie .now{
+	width: 140px;
+	height: 140px;
+	line-height: 140px;
+}
+.singleDay label{
+	display: inline-block;
+	width: 30%
+}
+
+.singleDay li{
+	line-height: 40px;
+}
+
+/****************回复问题**********************/
+.question:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.question{
+	padding: 40px 35px 10px;
+	-moz-box-shadow: 0px 3px 20px #a5a5a6; 
+	box-shadow: 0px 3px 20px #a5a5a6;
+}
+.question dl,.question ul{
+	float: left;
+}
+.question dl{
+	font-size: 14px;
+	text-align: center;
+	line-height: 40px
+}
+.question dd{
+	width: 115px;
+	height: 115px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.question dd img{
+	width: 100%
+}
+.question ul{
+	margin-left: 40px
+}
+.question ul li{
+	font-size: 16px;
+}
+.question ul p{
+	font-size: 24px;
+	line-height: 70px
+}
+.replayMain{
+	background: #e8e8e8;
+	padding:0 35px;
+	margin-top: 9px;
+}
+.replayMain>span{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 45px;
+}
+.replayMain>div{
+	/*width: 100%;*/
+	background: #fff;
+	min-height: 100px;
+	-moz-box-shadow: 0px 3px 20px #a5a5a6; 
+	box-shadow: 0px 3px 20px #a5a5a6;
+	padding: 30px;
+
+}
+.replayMain p{
+	text-align: center;
+}
+.replayMain button{
+	
+	font-size: 18px;
+	background: #004d8d;
+	padding:10px 35px;
+	border-radius: 3px;
+	margin:50px 0;
+}
+.replayMain button a{
+	display: block;
+	color: #fff;
+}
+/**************我的回复************************/
+.myAnswer{
+	background: #e8e8e8;
+	min-height:100% 
+}
+.myAnswer:before{
+	content: "";
+	display: table;
+}
+.myAnswer .question{
+	background: #fff;
+	margin-top: 20px;
+	position: relative;
+}
+.myAnswer .question>a{
+	position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+.myAnswer .question:first-child{
+	margin-top: 0;
+}
+.myAnswer .question h3{
+	font-size: 24px;
+	font-weight: normal;
+}
+.myAnswer .qestionDetail{
+	font-size: 14px;
+}
+.myAnswer .answerDetail{
+	line-height: 50px;
+	border-top: 1px solid #000;
+	margin: 15px 0; 
+}
+.myAnswer .time{
+	font-size: 10px
+}
+/***************我的课程*******************/
+.panel{
+	background: #fff;
+	-moz-box-shadow: 0px 3px 20px #a5a5a6; 
+	box-shadow: 0px 3px 20px #a5a5a6;
+}
+.myCourse{
+	background: #e8e8e8;
+	height: 100%
+}
+.myCourseMain{
+	padding: 0 30px 20px;
+	overflow: hidden;
+}
+.myCourseMain>div{
+
+}
+.myCourse>.panel{
+	text-align: right;
+	padding: 20px 40px
+}
+.myCourse>.panel button,.addNewCourse button{
+	background: #004d8d;
+	padding:10px 15px;
+	
+	border-radius: 3px;
+	font-size: 16px
+}
+.myCourse>.panel button a,.addNewCourse button a{
+	color: #fff;
+	display: block;
+}
+.myCourse>.panel button i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("../images/icon_list.png") no-repeat -2px -244px;
+	vertical-align: middle;
+	margin-right: 10px
+}
+.myCourseMain>div{
+	padding-bottom: 20px;
+	font-size: 14px;
+	margin:15px 5% 0 0; 
+	float: left;
+	width: 45%;
+	color:#262626;
+}
+.myCourseMain>div:nth-child(2n){
+	margin-right: 0
+}
+.myCourseMain>div li{
+	line-height: 25px
+}
+.myCourseMain>div ul{
+	width: 80%;
+	margin:0 auto;
+}
+.myCourseMain .doing{
+	color:#fb1b40;
+}
+.myCourseMain .done{
+	color:#999999;
+}
+.myCourseMain .willDo{
+	color:#004d8d;
+}
+.myCourseMain>div li>p{
+	background: #f8f6f6;
+	color:#264769;
+}
+.myCourseMain>div li>div{
+	background: #e8e8e8
+}
+.myCourseMain>div li>div,.myCourseMain>div li>p{
+	padding: 0 20px
+}
+/********************添加新的课程********************/
+.addNewCourse{
+	padding: 20px 30px;
+}
+.addNewCourse .panel{
+	text-align: left; 
+	font-size: 14px;
+	line-height: 30px
+}
+.addNewCourse .input_group{
+	min-height: 40px
+}
+.addNewCourse .panel input{
+	background: #e8e8e8;
+	font-size: 14px;
+	padding: 5px 10px;
+	border-radius: 3px
+}
+.addNewCourse p{
+	text-align: center;
+}
+.addNewCourse button{
+	margin: 15px 0;
+}
+.addNewCourse button a{
+	color: #fff;
+	display: block;
+}
+.addNewCourse span{
+	display: inline-block;
+	margin:0 20px;
+}
+/*************我的书籍****************/
+.mybook .panel{
+	padding: 20px 35px;
+}
+.addNewBook textarea,.addNewBook input{
+	width: 475px
+}
+.addNewBook textarea{
+	vertical-align: top;
+	background: #e8e8e8;
+	border: 0;
+	padding: 5px 10px
+}
+.addNewBook label{
+	width: 80px;
+	display: inline-block;
+}
+
+.mybook .myCourseMain>div{
+	width: 38%;
+    margin: 20px 5% 0 0;
+    overflow: hidden;
+}
+.mybook .myCourseMain li{
+	overflow: hidden;
+	height: 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mybook .myCourseMain .panel>div{
+	height: 180px;
+	width: 150px;
+	background: #999999;
+	float: left;
+}
+.mybook .myCourseMain .panel>ul{
+	padding-left: 175px;
+    width: 58%;
+}
+.addNewCourse .panel i{
+	display: inline-block;
+	width: 100px;
+	height: 80px;
+	border-radius: 3px;
+	background: url("../images/icon_list.png") no-repeat 25px -330px #e8e8e8;
+	vertical-align: middle;
+	margin-bottom: 12px
+}
+
+.msgReplay dd{
+	height: 95px;
+	width: 95px;
+}
+.msgReplay .question>div{
+	overflow: hidden;
+}
+.dialogue{
+	border-top: 1px solid #5d5d5d
+}
+.dialogue ul{
+	margin-top: 10px;
+	margin-left: 0
+}
+.dialogue ul li{
+	line-height: 35px;
+	font-size: 14px;
+	color: #262626
+}
+.dialogue span{
+	color: #004d8d
+}
+.main .index div .blue,.blue{
+	color: #004d8d
+}
+.myCourseMain dl{
+	overflow: hidden;
+}
+.myCourseMain dd{
+	display: inline-block;
+	width: 39%;
+	margin: 0 1%;
+	vertical-align: middle;
+}
+.myCourseMain dd>div{
+	background: #a0a0a0;
+	width: 200px;
+	height: 280px;
+	float: left;
+}
+.myCourseMain dt{
+	display: inline-block;
+	width: 58%;
+	vertical-align: middle;
+}
+.myCourseMain dt ul{
+	
+}
+.history .gauge ol{
+	color: #5d5d5d;
+	font-size: 14px;
+	line-height: 25px
+}

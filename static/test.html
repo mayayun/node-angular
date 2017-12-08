@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="./js/angular.js"></script>
+  <style>
+    #c1,#s1{
+      border: 1px solid #ddd
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c1" width="500" height="300">您的浏览器不支持canvas标签。</canvas>
+
+  <svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" id="s1">
+    <path d="M750.5047 1358.0497 C765.6817 1358.0497 777.9854 1325.5532 777.9854 1285.4685 L777.9854 524.6117 C777.9854 484.5251 765.6817 452.0305 750.5047 452.0305 C735.3274 452.0305 723.0238 484.5251 723.0238 524.6117 L723.0238 1285.4685 C723.0238 1325.5532 735.3274 1358.0497 750.5047 1358.0497 Z" />
+  </svg>
+  <script>
+    var ctx = document.getElementById("c1").getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(0,280);
+    ctx.lineTo(490,280);
+    ctx.closePath();
+    ctx.strokeStyle = "#1dc05d";
+    ctx.stroke();
+
+    for(var i = 1;i<6;i++){
+        ctx.beginPath();
+        ctx.fillStyle = "#cddecf";
+        ctx.arc(60*i, 270, 10, 0, Math.PI, false);
+        ctx.lineTo(60*i-10,70);    
+        ctx.arc(60*i, 70, 10, Math.PI, 2*Math.PI, false);
+        ctx.closePath();
+        ctx.fill();
+    }
+    
+    for(var j = 1;j<6;j++){
+        ctx.beginPath();
+        ctx.fillStyle = randomColor();
+        ctx.arc(60*j, 270, 10, 0, Math.PI, false);
+        ctx.lineTo(60*j-10,270-10*j);    
+        ctx.arc(60*j, 270-10*j, 10, Math.PI, 2*Math.PI, false);
+        ctx.closePath();
+        ctx.fill();
+        //console.log(270-10*j);
+    }
+
+    var arr = ["平静","愉悦","愤怒","悲伤","恐惧"];
+    ctx.font="16px Arial";
+    for(var k = 1;k<6;k++){
+        ctx.fillText(arr[k-1],60*k-ctx.measureText(arr[k-1]).width/2,296);
+    }
+
+    function randomColor(){
+      var r = Math.floor(Math.random()*256);
+      var g = Math.floor(Math.random()*256);
+      var b = Math.floor(Math.random()*256);
+      return "rgb("+r+","+g+","+b+")";
+    }
+  </script>
+  <div id="container" style="min-width:800px;height:400px"></div>
+  <ol>
+    <li>q</li>
+    <li>q</li>
+  </ol>
+  <script src="./js/Highcharts-6.0.1/highcharts.js"></script>
+  <!--[if lt IE 9]>
+  <script src="https://img.hcharts.cn/highcharts/modules/oldie.js"></script>
+  <![endif]-->
+  <script>
+    var options = {
+        chart: {
+            renderTo: 'container',
+            type: 'line'
+        },
+        series: [{
+            name: '小明',
+            data: [1, 0, 4]
+        }]
+    }
+    var chart = new Highcharts.Chart('container', options);
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<style>
+	#c1{
+		float: left;
+	}
+</style>
+<div class="personalMassage">
+			<h3>个人信息</h3>
+			<div class="personalMain">
+				<div class="basicMassage">
+					<ul class="child">
+						<li><p>孩子个人基本信息</p></li>
+						<li>年龄:6岁</li>
+						<li>性别:男</li>
+						<li>年级:一年级</li>
+						<li>性格特点:活泼</li>
+					</ul>
+					<ul class="parent">
+						<li><p>家长个人基本信息</p></li>
+						<li>年龄:30岁</li>
+						<li>性别:男</li>
+						<li>性格特点:活泼</li>
+						<li>我是孩子的：爸爸</li>
+					</ul>
+				</div>
+				<div class="gauge">
+					<p>量表</p>
+					<div>
+						<dl><dd>PHQ-9</dd><dt>2017-10-16 19:26</dt></dl>
+						<p>问题及答案</p>
+						<ol>
+							<li>1.做事时提不起劲或没有兴趣<span>完全不会</span></li>
+							<li>2.感到心情沮丧<span>完全不会</span></li>
+							<li>3.做事时提不起劲或没有兴趣<span>完全不会</span></li>
+							<li>4.感到心情沮丧<span>完全不会</span></li>
+							<li>5.做事时提不起劲或没有兴趣<span>完全不会</span></li>
+							<li>6.感到心情沮丧<span>完全不会</span></li>
+							<li>7.做事时提不起劲或没有兴趣<span>完全不会</span></li>
+							<li>8.感到心情沮丧<span>完全不会</span></li>
+						</ol>
+						<p>得分</p>
+						<span class="blue">60分</span>
+					</div>
+					
+				</div>
+				<div class="history">
+					<p>历史记录</p>
+					<div class="singleDay">
+						<h4>今天</h4>
+						<div>
+							<div>
+								<p class="now">情绪指数：82</p>
+								<p>历史指数：60 </p>
+							</div>
+							<div class="pie">
+								<p class="now">82</p>
+								<p>60</p>
+							</div>
+						</div>
+						<div>
+							<canvas id="c1" width="370" height="260">您的浏览器不支持canvas标签。</canvas>
+							<p style="padding-top: 220px;font-size: 20px;padding-left: 400px;">咋张张心情预约</p>
+						</div>
+					</div>
+						
+					<div class="gauge">
+						<div>
+							<p>问题描述1</p>
+							<ol>
+								<li>刘老师：因为什么事是</li>
+								<li>用户：不想说话</li>
+								<li>刘老师：因为什么事是</li>
+								<li>用户：不想说话</li>
+							</ol>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			var ctx = document.getElementById("c1").getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(0,230);
+    ctx.lineTo(490,230);
+    ctx.closePath();
+    ctx.strokeStyle = "#1dc05d";
+    ctx.stroke();
+
+    for(var i = 1;i<6;i++){
+        ctx.beginPath();
+        ctx.fillStyle = "#cddecf";
+        ctx.arc(60*i, 220, 10, 0, Math.PI, false);
+        ctx.lineTo(60*i-10,70);    
+        ctx.arc(60*i, 20, 10, Math.PI, 2*Math.PI, false);
+        ctx.closePath();
+        ctx.fill();
+    }
+    
+    for(var j = 1;j<6;j++){
+        ctx.beginPath();
+        ctx.fillStyle = randomColor();
+        ctx.arc(60*j, 220, 10, 0, Math.PI, false);
+        ctx.lineTo(60*j-10,270-10*j);    
+        ctx.arc(60*j, 220-10*j, 10, Math.PI, 2*Math.PI, false);
+        ctx.closePath();
+        ctx.fill();
+        //console.log(270-10*j);
+    }
+
+    var arr = ["平静","愉悦","愤怒","悲伤","恐惧"];
+    ctx.font="16px Arial";
+    for(var k = 1;k<6;k++){
+        ctx.fillText(arr[k-1],60*k-ctx.measureText(arr[k-1]).width/2,250);
+    }
+
+    function randomColor(){
+      var r = Math.floor(Math.random()*256);
+      var g = Math.floor(Math.random()*256);
+      var b = Math.floor(Math.random()*256);
+      return "rgb("+r+","+g+","+b+")";
+    }
+		</script>

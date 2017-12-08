@@ -1,0 +1,27 @@
+<div class="addQues">
+			<div class=" outer">
+				<div class="input_group name">
+					<label for="">问卷名称：</label><input type="text">
+				</div>
+				<div class="" ng-repeat="item in arr track by $index">
+					<div class="input_group discrip">
+						<label for="">问题描述：</label>
+						<div>
+							<p contenteditable="true"></p>
+						</div>
+					</div>
+					<div class="input_group answer">
+						<label for="">答案：</label>
+						<div>
+							<p contenteditable="true" ng-repeat="p in item.asswer track by $index"></p><span ng-click="addAn($index)"></span>
+						</div>
+						
+					</div>
+				</div>
+				<p><a href="javascript:void(0)" ng-click="addNewQ()"><i></i>增加新问题</a></p>
+
+			</div>
+			<p><button><a href="#/questionnaire">生成问卷</a></button></p>
+		</div>
+
+		<p contenteditable="true"></p>
